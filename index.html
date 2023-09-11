@@ -3,25 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Controle de convidados</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Cadastro de clientes</h1>
+    <h1>Lista de convidados para evento</h1>
     
     <div class="form">
         <input type="text" id="nome" placeholder="Nome">
         <input type="text" id="telefone" placeholder="Telefone">
         <input type="text" id="email" placeholder="Email">
-        <button onclick="cadastrar()"> click</button>
+        <button onclick="cadastrar()"> Adicionar</button>
     </div>
 
     <div class="list">
-        <h2>Clientes cadastrados</h2>
-        <ul id="lista">
-        </ul>
+        <h2>Controle de convidados confirmados</h2>
+        <table>
+            <thead>
+              <tr>
+             
+                    <td>
+                        <p>Id</p>
+                    </td>
+                    <td>
+                        <p>Nome do convidado</p>
+                    </td>
+                    <td>
+                        <p>Telefone</p>
+                    </td>
+                    <td>
+                        <p>Email</p>
+                    </td>
+                    <td>
+                        <p>Registro</p>
+                    </td>
+                    <td>
+                        <p>Opções</p>
+                    </td>
+              </tr>
+            </thead>
+            <tbody id="lista">
+            </tbody>
+        </table>
     </div>
-
     <script src="index.js"></script>
 </body>
 </html>
