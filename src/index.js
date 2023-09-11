@@ -4,12 +4,12 @@ class User {
     this.nome = nome;
     this.telefone = telefone;
     this.email = email;
-    this.dataCadastro = new Date(); // Adiciona a data e hora atual do cadastro
+    this.dataCadastro = new Date(); // Adiciona a data e hora atual da realização do cadastro
   }
 }
 
 const listaUser = [];// Array para armazenar os usuários cadastrados
-const listaElement = document.getElementById('lista');// Elemento HTML onde a lista de usuários será exibida
+const listaElement = document.getElementById('lista');// Elemento HTML em quea lista de usuários será exibida
 
 // Função para cadastrar um novo usuário
 function cadastrar() {
